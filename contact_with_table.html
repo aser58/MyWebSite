@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- heder -->
+
+      <div id="heder">
+        <h1>My First Page</h1>
+        <h3>This is H3</h3>
+      </div>
+      <!-- heder end -->
+
+      <!-- Nav -->
+      <div id="nav">
+        <a href="index.html">Home</a> | <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a>
+      </div>
+      <!-- Nav end -->
+
+      <!-- content -->
+      <h1>Contact Page</h1>
+
+      <form action="get_data.html">
+        <table>
+          <tr>
+            <td><label for="firstname">First Name</label></td>
+            <td><input type="text" name="firstname" id="firstname" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="lastname">Last Name</label></td>
+            <td><input type="text" name="lastname" id="lastname" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="email">eMail Address</label></td>
+            <td><input type="email" name="email" id="email" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="phone">Phone Number</label></td>
+            <td><input type="tel" name="phone" id="phone" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Select Gender</label></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="male" value="male" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="female">FeMale</label>
+              <input type="radio" name="gender" id="female" value="female" />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="reasons">Select Reason for Contact:</label></td>
+          </tr>
+          <tr>
+            <td>
+              <select id="reasons" name="reasons">
+                <option value="complain">Complain</option>
+                <option value="cuery">Query</option>
+                <option value="other">Other</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="comments">Comments</label><br /></td>
+          </tr>
+          <tr>
+            <td>
+              <textarea
+                type="text"
+                name="comments"
+                id="comments"
+                rows="5"
+                cols="25"
+              ></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td><input type="submit" /></td>
+          </tr>
+        </table>
+      </form>
+
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <!-- <form action="get_data.html" method="get">
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" />
+
+        <br />
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" />
+
+        <br />
+        <label for="email">eMail Address</label>
+        <input type="email" name="email" id="email" />
+
+        <br />
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone" />
+
+        <br />
+        <label>Gender</label>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="female">FeMale</label>
+        <input type="radio" name="gender" id="female" value="female" />
+
+        <br />
+        <label for="reasons">Select Reason for Contact:</label>
+        <br />
+        <select id="reasons" name="reasons">
+          <option value="complain">Complain</option>
+          <option value="cuery">Query</option>
+          <option value="other">Other</option>
+        </select>
+
+        <br />
+        <label for="comments">Comments</label><br />
+        <textarea
+          type="text"
+          name="comments"
+          id="comments"
+          rows="5"
+          cols="25"
+        ></textarea>
+
+        <br />
+
+        <input type="submit" />
+      </form> -->
+      <!-- content end -->
+
+      <!-- fotter -->
+      <div id="footer">
+        <h3>This is H3 in div</h3>
+        <h6>This is H6 in div</h6>
+        <p>This is p in div</p>
+        <sp>This is span in div</sp>
+      </div>
+      <!-- fotter end -->
+    </div>
+  </body>
+</html>

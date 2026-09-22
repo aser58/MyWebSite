@@ -1,0 +1,99 @@
+
+        p{
+            font-size: 24px;
+            color: cornflowerblue;
+            font-weight: bold;
+            
+        }
+
+        #heder{
+
+            background-color: bisque;
+            text-align: center ;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #footer{
+            
+            text-align: center;
+            background-color: darkseagreen;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        #nav{
+            background-color: black;
+            padding: 10px   ;
+        }
+        #nav a{
+            color: white;
+            padding: 10px;
+        }
+
+         #nav a:hover{
+            color: red;
+            background-color: yellow;
+            font-size: 40px;
+         }
+
+        #container{
+            width: 80%;
+        }
+
+        a{
+            font-size: 25px;
+        }
+
+        ul{
+            font-size: 25px;
+        }
+
+        ol{
+            font-size: 25px;
+        }
+
+        img{
+
+            width: 200px;
+            height: 150px;
+        }
+
+        h1{
+            font-size: 30;
+            color: maroon;
+        }
+
+        h2{
+            font-size: 26;
+            color: green;
+        }
+
+        h3,h4,h5{
+            font-size: 20;
+            color: fuchsia;
+        }
+
+        .infotable,.infotable2{
+            font-weight: bold;
+            font-size: 22px;
+           
+            border: 2px  solid black;
+            border-collapse: collapse;
+            width: 100%;
+            align-content: center;
+        }
+
+       .infotable td{
+            border: 2px  solid black;
+            width: 50%;
+            padding-left: 10px;
+       }
+
+        .infotable2 td{
+            border: 2px  solid black;
+            width: 25%;
+            padding-left: 10px;
+       }
+
+  
