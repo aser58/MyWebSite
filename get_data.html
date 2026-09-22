@@ -1,20 +1,23 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get Data</title>
     <style>
-        p{
-            font-size: 30px;
-            font-weight: bold;
-            color: blueviolet;
-        }
+      p {
+        font-size: 30px;
+        font-weight: bold;
+        color: blueviolet;
+      }
     </style>
-</head>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- heder -->
+    <div id="nav-container"></div>
+    <!-- heder end -->
 
     <p>First Name: <span id="firstname"></span></p>
     <p>Last Name: <span id="lastname"></span></p>
@@ -25,32 +28,42 @@
     <p>Comments: <span id="comments"></span></p>
 
     <script>
+      const params = new URLSearchParams(window.location.search);
 
-        const params = new URLSearchParams(window.location.search);
+      document.getElementById("firstname").textContent =
+        params.get("firstname") || "";
 
-        document.getElementById("firstname").textContent =
-            params.get("firstname") || "";
+      document.getElementById("lastname").textContent =
+        params.get("lastname") || "";
 
-        document.getElementById("lastname").textContent =
-            params.get("lastname") || "";
+      document.getElementById("email").textContent = params.get("email") || "";
 
-        document.getElementById("email").textContent =
-            params.get("email") || "";
+      document.getElementById("phone").textContent = params.get("phone") || "";
 
-        document.getElementById("phone").textContent =
-            params.get("phone") || "";
+      document.getElementById("gender").textContent =
+        params.get("gender") || "";
 
-        document.getElementById("gender").textContent =
-            params.get("gender") || "";
+      document.getElementById("reasons").textContent =
+        params.get("reasons") || "";
 
-        document.getElementById("reasons").textContent =
-            params.get("reasons") || "";
-
-        document.getElementById("comments").textContent =
-            params.get("comments") || "";
-
+      document.getElementById("comments").textContent =
+        params.get("comments") || "";
     </script>
 
-</body>
+   <script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-container").innerHTML = data;
+        });
+    </script>
 
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-container").innerHTML = data;
+        });
+    </script>
+  </body>
 </html>

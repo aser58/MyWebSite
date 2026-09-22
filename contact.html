@@ -228,21 +228,10 @@
   </head>
   <body>
     <div id="container">
-      <!-- heder -->
-
-      <div id="heder">
-        <h1>My First Page</h1>
-        <h3>This is H3</h3>
-      </div>
-      <!-- heder end -->
-
-      <!-- Nav -->
-      <div id="nav">
-        <a href="index.html">Home</a> | <a href="about.html">About</a> |
-        <a href="contact.html">Contact</a>
-      </div>
-      <!-- Nav end -->
-
+     
+       <!-- heder -->
+      <div id="nav-container"></div>
+     <!-- heder end -->
       <!-- content -->
       <h1>Contact Page</h1>
 
@@ -302,5 +291,23 @@
       </div>
       <!-- fotter end -->
     </div>
+
+     <script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-container").innerHTML = data;
+        });
+    </script>
+
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-container").innerHTML = data;
+        });
+    </script>
+    
   </body>
+
 </html>
